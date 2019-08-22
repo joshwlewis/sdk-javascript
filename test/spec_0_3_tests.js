@@ -201,6 +201,15 @@ describe("CloudEvents Spec v0.3", () => {
       });
     });
 
+    describe("'data'", () => {
+      it("should convert data with stringified json to a json object", () => {
+        cloudevent
+          .data(JSON.stringify(data))
+        cloudevent.format()
+        expect(cloudevent.getData()).to.equal(data);
+      });
+    });
+
     describe("'subject'", () => {
       it("should throw an error when is an empty string", () => {
         cloudevent.subject("");

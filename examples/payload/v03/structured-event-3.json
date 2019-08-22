@@ -1,0 +1,10 @@
+{
+  "specversion":"0.3",
+  "type":"com.github.pull.create",
+  "source":"https://github.com/cloudevents/spec/pull/123",
+  "subject": "Stringified JSON data",
+  "id":"65b16c8f-12a0-4eea-9c7d-9a3e128b2fe8",
+  "time":"2019-08-22T10:42:17-05:00",
+  "datacontenttype":"application/json",
+  "data": "{\"so\": \"scare\"}"
+}
